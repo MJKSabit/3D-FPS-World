@@ -67,6 +67,12 @@ void drawRays()
 {
     int i;
     for(i=0; i<numOfRays; i++){
+        /// Intense Coloring
+        int temp = 1000*lineHeight[i]/maxLineHeight;
+        int col = 32 + (temp < 220 ? temp : 220);
+        iSetColor(col, col, col);
+
+        /// Height Drawing
         iLine(i*WIDTH/(numOfRays-1), HEIGHT/2, i*WIDTH/(numOfRays-1), HEIGHT/2+lineHeight[i]);
         iLine(i*WIDTH/(numOfRays-1), HEIGHT/2, i*WIDTH/(numOfRays-1), HEIGHT/2-lineHeight[i]);
     }
@@ -75,7 +81,7 @@ void drawRays()
 void drawMap()
 {
     iSetColor(10, 250, 10);
-    iFilledRectangle(0, 0, 20*10, 10*10);
+    iFilledRectangle(1, 1, 20*10, 10*10);
 
     iSetColor(250, 0, 0);
     int i, j;
