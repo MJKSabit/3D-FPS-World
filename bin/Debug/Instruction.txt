@@ -1,0 +1,19 @@
+"Map.txt" Instruction
+1. First Line Contains two integers, <m n>,
+  m = number of rows in the map
+  n = number of columns in the map
+
+2. Next "m" lines contains string with n characters
+  It represnts the map;
+
+'#' Means BLOCK
+'.' Means SPACE
+
+3. After (m+1) lines, a line contains two double values, <posX, posY>
+  posX = player position (X co-ordinate)
+  posY = player position (Y co-ordinate)
+
+Movement:
+Use arrow keys to move the player...
+CREATE YOUR OWN MAP
+ENJOY...
